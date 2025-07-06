@@ -29,7 +29,7 @@ PLAYER_TOKEN = os.getenv("PLAYER_TOKEN")
 intents = discord.Intents.default()
 intents.message_content = True  # REQUIRED for command recognition
 bot = commands.Bot(command_prefix="!", intents=intents)
-DISCORD_CHANNEL = 1391224969509208084 # my discord channel for notifications
+DISCORD_CHANNEL = os.getenv("DISCORD_CHANNEL_ID")
 
 # === Rust+ setup ===
 server = ServerDetails(IP, PORT, STEAM_ID, PLAYER_TOKEN)
