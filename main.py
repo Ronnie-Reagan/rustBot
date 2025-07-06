@@ -20,9 +20,6 @@ load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 SAVE_FILE = "player_stats.json"
 
-with open("info.json", "r") as f:
-    info = json.load(f)
-
 IP = os.getenv("IP")
 PORT = os.getenv("PORT")
 STEAM_ID = os.getenv("STEAM_ID")
