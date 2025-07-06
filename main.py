@@ -23,10 +23,10 @@ SAVE_FILE = "player_stats.json"
 with open("info.json", "r") as f:
     info = json.load(f)
 
-IP = info["ip"]
-PORT = int(info["port"])
-STEAM_ID = int(info["playerId"])
-PLAYER_TOKEN = int(info["playerToken"])
+IP = os.getenv("IP")
+PORT = os.getenv("PORT")
+STEAM_ID = os.getenv("STEAM_ID")
+PLAYER_TOKEN = os.getenv("PLAYER_TOKEN")
 
 # === Discord setup ===
 intents = discord.Intents.default()
